@@ -120,7 +120,7 @@ MimiMind AI menggunakan konsep **AI yang friendly dan menyenangkan**.
 Elemen visual utama:
 
 - 🐱 Virtual cat sebagai karakter Mimi
-- 🌸 Pastel pink
+- 🌸 Pastel pink nih
 - 💜 Lavender/purple
 - ✨ Sparkle dan elemen cute
 - 🐾 Microcopy bertema kucing
