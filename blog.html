@@ -1,180 +1,29 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MimiMind AI Blog - artikel ringan dan informatif tentang Artificial Intelligence.">
-    <title>Blog AI | MimiMind AI</title>
-
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --mimi-pink: #ec6fa6;
-            --mimi-soft: #fff1f7;
-            --mimi-purple: #a979d7;
-            --mimi-text: #554b5d;
-        }
-        body { font-family: "Poppins", sans-serif; color: var(--mimi-text); background: #fffdf9; }
-        h1, h2, h3, .navbar-brand { font-family: "Baloo 2", sans-serif; }
-        .navbar-brand { color: var(--mimi-pink) !important; font-size: 1.6rem; font-weight: 800; }
-        .navbar-brand strong { color: var(--mimi-purple); }
-        .hero-blog { background: linear-gradient(135deg, #fff0f7, #f7efff); }
-        .blog-title { color: #44384c; font-weight: 800; }
-        .badge-mimi { background: var(--mimi-soft); color: #d95791; }
-        .card { border-color: #f1dce8; border-radius: 1.25rem; overflow: hidden; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 .8rem 2rem rgba(205,116,158,.12); }
-        .card, .btn, .nav-link { transition: .2s ease; }
-        .card-title a { color: #44384c; text-decoration: none; }
-        .card-title a:hover { color: var(--mimi-pink); }
-        .btn-mimi { background: var(--mimi-pink); color: white; border: none; }
-        .btn-mimi:hover { background: #d95791; color: white; }
-        .cover { height: 190px; object-fit: cover; }
-        .cat-cover { height: 190px; display: grid; place-items: center; background: linear-gradient(135deg,#ffdce9,#eee1ff); font-size: 5rem; }
-        footer { background: #fff3f8; }
-    </style>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog MimiMind AI berisi artikel ringan tentang Generative AI, prompt engineering, etika AI, dan machine learning.">
+  <title>Blog AI | MimiMind AI</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-            <div class="container py-2">
-                <a class="navbar-brand" href="index.html">🐱 MimiMind <strong>AI</strong></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-heart me-1"></i>Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="blog.html"><i class="bi bi-journal-text me-1"></i>Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="cv.html"><i class="bi bi-person-badge me-1"></i>CV</a></li>
-                        <li class="nav-item"><a class="btn btn-mimi rounded-pill px-3 ms-lg-2" href="index.html#kontak">Konsultasi 🐾</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero-blog py-5">
-            <div class="container py-4 text-center">
-                <span class="badge rounded-pill badge-mimi px-3 py-2 mb-3"><i class="bi bi-stars me-1"></i>Mimi's AI Corner</span>
-                <h1 class="display-4 blog-title">Belajar AI bareng Mimi 🐱</h1>
-                <p class="lead mx-auto mb-0" style="max-width: 720px;">
-                    Artikel ringan tentang Artificial Intelligence, mulai dari Generative AI,
-                    prompt engineering, sampai etika penggunaan AI.
-                </p>
-            </div>
-        </section>
-
-        <section class="py-5">
-            <div class="container">
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-                    <span class="badge rounded-pill text-bg-light border px-3 py-2">Semua</span>
-                    <span class="badge rounded-pill badge-mimi px-3 py-2">Generative AI</span>
-                    <span class="badge rounded-pill badge-mimi px-3 py-2">Tools</span>
-                    <span class="badge rounded-pill badge-mimi px-3 py-2">Etika AI</span>
-                    <span class="badge rounded-pill badge-mimi px-3 py-2">Machine Learning</span>
-                </div>
-
-                <div class="row g-4">
-                    <!-- Artikel 1 -->
-                    <article class="col-md-6 col-xl-3">
-                        <div class="card h-100 shadow-sm">
-                            <div class="cat-cover">🐱✨</div>
-                            <div class="card-body d-flex flex-column">
-                                <span class="badge rounded-pill badge-mimi align-self-start mb-2"><i class="bi bi-stars me-1"></i>Generative AI</span>
-                                <h2 class="h4 card-title"><a href="blog-detail.html">Mengenal Generative AI dengan Cara Sederhana</a></h2>
-                                <p class="card-text small">Kenalan dengan konsep Generative AI dan bagaimana teknologi ini menghasilkan teks, gambar, serta ide baru.</p>
-                                <div class="small text-secondary mt-auto pt-3 border-top">
-                                    <div><i class="bi bi-person me-1"></i>MimiMind Team</div>
-                                    <div><i class="bi bi-calendar3 me-1"></i>18 September 2026 · <i class="bi bi-clock ms-1 me-1"></i>5 menit</div>
-                                </div>
-                                <a class="btn btn-mimi rounded-pill mt-3" href="blog-detail.html">Baca selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Artikel 2 -->
-                    <article class="col-md-6 col-xl-3">
-                        <div class="card h-100 shadow-sm">
-                            <div class="cat-cover">💬🐾</div>
-                            <div class="card-body d-flex flex-column">
-                                <span class="badge rounded-pill badge-mimi align-self-start mb-2"><i class="bi bi-chat-heart me-1"></i>Tools</span>
-                                <h2 class="h4 card-title"><a href="blog-detail.html">Prompt Engineering: Cara Berkomunikasi dengan AI</a></h2>
-                                <p class="card-text small">Prompt yang jelas membantu AI memahami tujuan, konteks, format, dan batasan jawaban yang kita inginkan.</p>
-                                <div class="small text-secondary mt-auto pt-3 border-top">
-                                    <div><i class="bi bi-person me-1"></i>MimiMind Team</div>
-                                    <div><i class="bi bi-calendar3 me-1"></i>15 September 2026 · <i class="bi bi-clock ms-1 me-1"></i>4 menit</div>
-                                </div>
-                                <a class="btn btn-mimi rounded-pill mt-3" href="blog-detail.html">Baca selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Artikel 3 -->
-                    <article class="col-md-6 col-xl-3">
-                        <div class="card h-100 shadow-sm">
-                            <div class="cat-cover">🛡️🐱</div>
-                            <div class="card-body d-flex flex-column">
-                                <span class="badge rounded-pill badge-mimi align-self-start mb-2"><i class="bi bi-shield-check me-1"></i>Etika AI</span>
-                                <h2 class="h4 card-title"><a href="blog-detail.html">Etika AI: Menggunakan Teknologi dengan Bertanggung Jawab</a></h2>
-                                <p class="card-text small">AI dapat membantu banyak hal, tetapi pengguna tetap perlu memperhatikan privasi, bias, transparansi, dan verifikasi.</p>
-                                <div class="small text-secondary mt-auto pt-3 border-top">
-                                    <div><i class="bi bi-person me-1"></i>MimiMind Team</div>
-                                    <div><i class="bi bi-calendar3 me-1"></i>12 September 2026 · <i class="bi bi-clock ms-1 me-1"></i>6 menit</div>
-                                </div>
-                                <a class="btn btn-mimi rounded-pill mt-3" href="blog-detail.html">Baca selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Artikel 4 -->
-                    <article class="col-md-6 col-xl-3">
-                        <div class="card h-100 shadow-sm">
-                            <div class="cat-cover">📊🐾</div>
-                            <div class="card-body d-flex flex-column">
-                                <span class="badge rounded-pill badge-mimi align-self-start mb-2"><i class="bi bi-graph-up-arrow me-1"></i>Machine Learning</span>
-                                <h2 class="h4 card-title"><a href="blog-detail.html">Dari Data ke Prediksi: Mengenal Machine Learning</a></h2>
-                                <p class="card-text small">Machine Learning membuat komputer mempelajari pola dari data untuk membantu klasifikasi atau membuat prediksi.</p>
-                                <div class="small text-secondary mt-auto pt-3 border-top">
-                                    <div><i class="bi bi-person me-1"></i>MimiMind Team</div>
-                                    <div><i class="bi bi-calendar3 me-1"></i>9 September 2026 · <i class="bi bi-clock ms-1 me-1"></i>5 menit</div>
-                                </div>
-                                <a class="btn btn-mimi rounded-pill mt-3" href="blog-detail.html">Baca selengkapnya <i class="bi bi-arrow-right ms-1"></i></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <nav aria-label="Navigasi halaman blog" class="mt-5">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled"><span class="page-link">Sebelumnya</span></li>
-                        <li class="page-item active"><span class="page-link" style="background:#ec6fa6;border-color:#ec6fa6;">1</span></li>
-                        <li class="page-item"><a class="page-link" href="blog.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="blog.html">Berikutnya</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-    </main>
-
-    <footer class="py-4 border-top">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-secondary">
-            <span>© 2026 MimiMind AI · Made with 🐱 & AI</span>
-            <div class="d-flex gap-3">
-                <a class="text-decoration-none text-secondary" href="index.html">Home</a>
-                <a class="text-decoration-none text-secondary" href="blog.html">Blog</a>
-                <a class="text-decoration-none text-secondary" href="cv.html">CV</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<body class="blog-page">
+<a class="skip-link" href="#blog-main">Lewati ke konten utama</a>
+<header class="site-header"><nav class="navbar navbar-expand-lg container" aria-label="Navigasi utama"><a class="navbar-brand" href="index.html">🐱 MimiMind <strong>AI</strong></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2"><li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-heart me-1" aria-hidden="true"></i>Home</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html"><i class="bi bi-journal-text me-1" aria-hidden="true"></i>Blog</a></li><li class="nav-item"><a class="nav-link" href="cv.html"><i class="bi bi-person-badge me-1" aria-hidden="true"></i>CV</a></li><li class="nav-item"><a class="btn btn-mimi rounded-pill px-3 ms-lg-2" href="index.html#kontak">Konsultasi 🐾</a></li></ul></div></nav></header>
+<main id="blog-main">
+  <!-- Hero blog: pengantar dan kategori visual. -->
+  <section class="hero-blog py-5"><div class="container py-lg-4"><span class="badge rounded-pill badge-mimi px-3 py-2 mb-3"><i class="bi bi-stars me-1" aria-hidden="true"></i>Mimi's AI Corner</span><h1 class="display-4 fw-bold blog-title">Belajar AI, satu artikel setiap kali. 🐾</h1><p class="lead blog-intro">Insight singkat tentang AI yang dibuat agar konsep teknologi terasa lebih dekat, ringan, dan menyenangkan.</p><div class="d-flex flex-wrap gap-2 mt-4" aria-label="Kategori artikel"><span class="badge rounded-pill badge-mimi px-3 py-2">Generative AI</span><span class="badge rounded-pill badge-mimi px-3 py-2">Tools</span><span class="badge rounded-pill badge-mimi px-3 py-2">Etika AI</span><span class="badge rounded-pill badge-mimi px-3 py-2">Machine Learning</span></div></div></section>
+  <!-- Daftar artikel: empat card Bootstrap. -->
+  <section class="py-5"><div class="container"><div class="row g-4">
+    <article class="col-md-6 col-lg-3"><div class="card h-100 shadow-sm"><img class="cover" src="assets/img/ai-generative.png" alt="Ilustrasi Mimi belajar Generative AI" width="1200" height="700" fetchpriority="high"><div class="card-body d-flex flex-column"><span class="badge rounded-pill badge-mimi align-self-start mb-2"><i class="bi bi-stars me-1" aria-hidden="true"></i>Generative AI</span><h2 class="h4 card-title"><a href="blog-detail.html">Mengenal Generative AI dengan Cara Sederhana</a></h2><p class="card-text">Kenalan dengan AI generatif dan bagaimana teknologi ini menghasilkan teks, gambar, serta ide baru.</p><p class="small text-body-secondary mt-auto mb-0"><i class="bi bi-person me-1" aria-hidden="true"></i>Mimi Team · <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>12 Sep 2026 · <i class="bi bi-clock me-1" aria-hidden="true"></i>5 min</p><a class="btn btn-mimi rounded-pill mt-3" href="blog-detail.html">Baca selengkapnya <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a></div></div></article>
+    <article class="col-md-6 col-lg-3"><div class="card h-100 shadow-sm"><img class="cover" src="assets/img/prompt-engineering.png" alt="Ilustrasi prompt engineering bersama Mimi" width="1200" height="700" loading="lazy"><div class="card-body d-flex flex-column"><span class="badge rounded-pill badge-mimi align-self-start mb-2"><i class="bi bi-chat-heart me-1" aria-hidden="true"></i>Tools</span><h2 class="h4 card-title"><a href="blog-detail.html">Prompt Engineering: Cara Berkomunikasi dengan AI</a></h2><p class="card-text">Pelajari cara menulis instruksi yang jelas agar hasil dari AI lebih relevan dengan tujuanmu.</p><p class="small text-body-secondary mt-auto mb-0"><i class="bi bi-person me-1" aria-hidden="true"></i>Mimi Team · <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>10 Sep 2026 · <i class="bi bi-clock me-1" aria-hidden="true"></i>4 min</p><a class="btn btn-mimi rounded-pill mt-3" href="blog-detail.html">Baca selengkapnya <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a></div></div></article>
+    <article class="col-md-6 col-lg-3"><div class="card h-100 shadow-sm"><img class="cover" src="assets/img/etika-ai.png" alt="Ilustrasi etika penggunaan AI bersama Mimi" width="1200" height="700" loading="lazy"><div class="card-body d-flex flex-column"><span class="badge rounded-pill badge-mimi align-self-start mb-2"><i class="bi bi-shield-check me-1" aria-hidden="true"></i>Etika AI</span><h2 class="h4 card-title"><a href="blog-detail.html">Etika AI: Menggunakan Teknologi dengan Bertanggung Jawab</a></h2><p class="card-text">Kenapa privasi, bias, transparansi, dan verifikasi tetap penting saat menggunakan AI?</p><p class="small text-body-secondary mt-auto mb-0"><i class="bi bi-person me-1" aria-hidden="true"></i>Mimi Team · <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>8 Sep 2026 · <i class="bi bi-clock me-1" aria-hidden="true"></i>6 min</p><a class="btn btn-mimi rounded-pill mt-3" href="blog-detail.html">Baca selengkapnya <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a></div></div></article>
+    <article class="col-md-6 col-lg-3"><div class="card h-100 shadow-sm"><img class="cover" src="assets/img/machine-learning.png" alt="Ilustrasi machine learning dan grafik data bersama Mimi" width="1200" height="700" loading="lazy"><div class="card-body d-flex flex-column"><span class="badge rounded-pill badge-mimi align-self-start mb-2"><i class="bi bi-graph-up-arrow me-1" aria-hidden="true"></i>Machine Learning</span><h2 class="h4 card-title"><a href="blog-detail.html">Dari Data ke Prediksi: Mengenal Machine Learning</a></h2><p class="card-text">Pahami gambaran dasar bagaimana model belajar dari data untuk menemukan pola dan membuat prediksi.</p><p class="small text-body-secondary mt-auto mb-0"><i class="bi bi-person me-1" aria-hidden="true"></i>Mimi Team · <i class="bi bi-calendar3 me-1" aria-hidden="true"></i>5 Sep 2026 · <i class="bi bi-clock me-1" aria-hidden="true"></i>5 min</p><a class="btn btn-mimi rounded-pill mt-3" href="blog-detail.html">Baca selengkapnya <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></a></div></div></article>
+  </div></div></section>
+  <nav class="pb-5" aria-label="Navigasi halaman blog"><ul class="pagination justify-content-center"><li class="page-item active" aria-current="page"><span class="page-link pagination-current">1</span></li><li class="page-item"><a class="page-link" href="blog.html">2</a></li><li class="page-item"><a class="page-link" href="blog.html">Berikutnya</a></li></ul></nav>
+</main>
+<footer class="py-4"><div class="container d-flex flex-column flex-md-row justify-content-between gap-3"><span>© 2026 MimiMind AI · Made with 🐱 &amp; AI</span><nav aria-label="Navigasi footer" class="d-flex gap-3"><a class="text-decoration-none fw-semibold text-dark" href="index.html">Home</a><a class="text-decoration-none fw-semibold text-dark" href="blog.html">Blog</a><a class="text-decoration-none fw-semibold text-dark" href="cv.html">CV</a></nav></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+</body></html>

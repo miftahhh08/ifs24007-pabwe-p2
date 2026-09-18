@@ -1,181 +1,159 @@
 # 🐱 MimiMind AI — PABWE P2
 
-Website studi kasus praktikum **Pemrograman Aplikasi Berbasis Web (PABWE)** dengan tema perusahaan jasa **Artificial Intelligence (AI)** yang dikemas dengan identitas cute, pastel pink, dan karakter **virtual cat** bernama Mimi.
+MimiMind AI adalah website studi kasus perusahaan jasa **Artificial Intelligence (AI)** dengan konsep visual **cute, pastel pink, dan virtual cat**. Website ini dibuat untuk memenuhi praktikum PABWE P2 dengan tiga pendekatan styling yang berbeda.
 
-## 📌 Identitas Proyek
+> **Tema:** AI yang ramah dan menyenangkan bersama Mimi, kucing virtual MimiMind AI.
 
-- **Nama website:** MimiMind AI
-- **Tema:** Jasa Artificial Intelligence dengan virtual cat
-- **Bahasa:** Bahasa Indonesia
-- **Konsep visual:** Cute, pastel pink, lavender, dan cat
-- **Nama folder:** `{username-kamu}-pabwe-p2`
+## 👩‍💻 Identitas
 
-> Ganti `{username-kamu}` pada nama folder dengan username/NIM sesuai ketentuan praktikum.
+- **Nama:** Miftahul Jannah Siregar
+- **Program Studi:** S1 Informatika
+- **Institusi:** Institut Teknologi Del
+- **Organisasi:** Departemen Agama dan Sosial, Badan Eksekutif Mahasiswa
 
-## 📁 Struktur Folder
+## 📁 Struktur Project
 
 ```text
 username-kamu-pabwe-p2/
 │
-├── index.html              # Landing Page - HTML + CSS murni
-├── blog.html               # Daftar Blog - Bootstrap 5
-├── blog-detail.html        # Detail Blog - Bootstrap 5
-├── cv.html                 # Curriculum Vitae - Tailwind CSS 4
-├── README.md               # Dokumentasi proyek
+├── index.html                 # Landing page — HTML + CSS murni
+├── blog.html                  # Daftar blog — Bootstrap 5 + Icons
+├── blog-detail.html           # Detail blog — Bootstrap 5 + Icons
+├── cv.html                    # CV digital — Tailwind CSS 4
+├── README.md
 │
 └── assets/
     ├── css/
-    │   └── style.css       # External CSS landing page
-    └── img/                # Folder aset gambar (opsional)
+    │   └── style.css          # External CSS untuk landing/blog
+    └── img/
+        ├── ai-generative.svg
+        ├── prompt-engineering.svg
+        ├── etika-ai.svg
+        ├── machine-learning.svg
+        └── mimi-avatar.svg
 ```
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi
 
-### 1. Landing Page — CSS Murni
-
-File: `index.html` dan `assets/css/style.css`
-
+### 1. Landing Page — `index.html`
 - Semantic HTML5: `header`, `nav`, `main`, `section`, `article`, `footer`
-- External CSS
-- CSS variables
-- Flexbox
-- CSS Grid
-- Box model
-- Typography
+- **External CSS** pada `assets/css/style.css`
+- CSS Variables
+- Flexbox dan CSS Grid
 - Hover dan transition
-- CSS animation sederhana
-- Responsive media query
-- Tidak menggunakan Bootstrap, Tailwind, atau framework CSS lain
+- Responsive desktop/mobile
+- Form kontak sederhana
+- Tidak menggunakan Bootstrap/Tailwind pada halaman ini
 
-### 2. Blog — Bootstrap 5 + Bootstrap Icons
-
-File:
-
-- `blog.html`
-- `blog-detail.html`
-
-Digunakan:
-
-- Bootstrap 5
-- Bootstrap Icons
+### 2. Blog — `blog.html` dan `blog-detail.html`
+- **Bootstrap 5.3.8** melalui CDN
+- **Bootstrap Icons 1.13.1**
 - Navbar responsive
-- Container, row, dan column
-- Card
-- Badge
-- Pagination
-- Form
-- Alert
+- Grid dan card
+- Badge kategori
+- Metadata artikel dengan Bootstrap Icons
+- Minimal 4 artikel bertema AI
+- Detail artikel berisi lebih dari 3 paragraf
+- Blockquote, list, alert, artikel terkait, dan form komentar
+- Cover artikel menggunakan aset SVG lokal agar halaman tidak bergantung pada gambar eksternal
+
+### 3. Curriculum Vitae — `cv.html`
+- **Tailwind CSS 4** melalui Play CDN
+- `@theme` untuk token warna MimiMind
 - Responsive utility classes
-
-Konten blog membahas topik AI seperti:
-
-- Generative AI
-- Prompt Engineering
-- Etika AI
-- Machine Learning
-
-### 3. CV — Tailwind CSS 4
-
-File: `cv.html`
-
-Menggunakan Tailwind CSS 4 melalui Play CDN dengan:
-
-- `@theme`
-- Flexbox
-- CSS Grid
-- Spacing utilities
-- Typography utilities
-- Responsive prefixes (`sm:`, `md:`, `lg:`)
+- Flexbox dan Grid
 - Hover dan transition
-- Badge/chip keahlian
+- Profile, contact, about, education, organization, projects, skills, interests, dan achievement
 
-## 🔗 Integrasi Navigasi
+## 🧭 Integrasi Navigasi
 
-Semua halaman dibuat saling terhubung:
+Semua halaman saling terhubung melalui navbar dan footer:
 
 ```text
 index.html
-   ├── blog.html
-   │      └── blog-detail.html
-   └── cv.html
+├── blog.html
+│   └── blog-detail.html
+└── cv.html
 ```
 
-Navigasi utama tersedia pada setiap halaman.
+Dari `blog.html`, seluruh tombol **Baca selengkapnya** membuka `blog-detail.html` sesuai requirement praktikum.
 
-- Landing Page → Blog
-- Landing Page → CV
-- Blog → Landing Page
-- Blog → Detail Blog
-- Blog → CV
-- Detail Blog → Daftar Blog
-- Detail Blog → Landing Page
-- Detail Blog → CV
-- CV → Landing Page
-- CV → Blog
+## 🎨 Konsep UI
 
-## 🎨 Konsep Desain
+MimiMind AI menggunakan:
 
-MimiMind AI menggunakan konsep **AI yang friendly dan menyenangkan**.
+- Pastel pink sebagai warna utama
+- Lavender sebagai aksen
+- Kucing virtual Mimi sebagai identitas visual
+- Rounded cards dan pill buttons
+- Hierarki heading yang jelas
+- Whitespace yang cukup
+- Fokus keyboard yang terlihat
+- Kontras teks yang diperhatikan untuk aksesibilitas
+- `alt` text pada gambar
+- Skip link untuk membantu pengguna keyboard/screen reader
+- `prefers-reduced-motion` pada halaman CSS
 
-Elemen visual utama:
+## ♿ Aksesibilitas
 
-- 🐱 Virtual cat sebagai karakter Mimi
-- 🌸 Pastel pink nih
-- 💜 Lavender/purple
-- ✨ Sparkle dan elemen cute
-- 🐾 Microcopy bertema kucing
-- 📚 Nuansa belajar yang ramah untuk pemula
+Beberapa perbaikan yang diterapkan setelah pengecekan accessibility:
 
-Identitas visual tetap konsisten pada seluruh halaman walaupun teknologi styling yang digunakan berbeda.
+- Warna teks utama dan tombol menggunakan warna pink yang lebih gelap agar memenuhi kontras WCAG AA.
+- Badge menggunakan teks gelap di atas background pastel.
+- Link footer menggunakan warna teks gelap.
+- Heading dan section memiliki struktur semantik.
+- Form mempunyai label yang terhubung dengan input melalui `for`/`id`.
+- Icon dekoratif diberi `aria-hidden="true"`.
+- Navbar mempunyai label navigasi.
+- Current page diberi `aria-current="page"`.
+- Tombol navbar Bootstrap mempunyai `aria-label` dan relasi `aria-controls`.
+
+## ⚡ Optimasi Performa
+
+- Cover blog menggunakan SVG lokal berukuran ringan.
+- Gambar artikel kedua dan seterusnya menggunakan `loading="lazy"`.
+- Ukuran gambar ditentukan dengan atribut `width` dan `height` untuk mengurangi layout shift.
+- Script Bootstrap menggunakan `defer`.
+- Font eksternal tidak digunakan agar tidak menambah request dan render-blocking resource.
+- Bootstrap dan Tailwind tetap menggunakan CDN karena merupakan bagian dari requirement praktikum.
 
 ## ▶️ Cara Menjalankan
 
-Tidak membutuhkan server khusus.
+Tidak membutuhkan server khusus untuk tampilan dasar. Buka `index.html` di browser atau gunakan extension **Live Server** pada VS Code.
 
-1. Buka folder proyek menggunakan VS Code.
-2. Pastikan struktur folder tidak berubah.
-3. Buka `index.html` menggunakan browser atau Live Server.
-4. Coba seluruh menu navigasi.
-5. Uji tampilan desktop dan mobile menggunakan browser DevTools.
+Urutan pengujian yang disarankan:
+
+1. Buka `index.html`.
+2. Coba navigasi ke `blog.html`.
+3. Klik **Baca selengkapnya** pada salah satu artikel.
+4. Pastikan halaman terbuka ke `blog-detail.html`.
+5. Coba navigasi ke `cv.html`.
+6. Uji tampilan desktop dan mobile melalui DevTools.
+7. Jalankan accessibility audit setelah seluruh halaman dimuat.
+
+## 📝 Catatan Data Kontak
+
+Nomor telepon/WhatsApp dan username GitHub pada CV masih menggunakan placeholder. Ganti bagian tersebut dengan data pribadi sebelum pengumpulan.
 
 ## ✅ Checklist Studi Kasus
 
-- [x] Landing page AI dengan external CSS
-- [x] Tidak menggunakan CSS framework pada landing page
+- [x] Landing page jasa AI dengan external CSS
 - [x] Minimal 3 layanan AI
-- [x] Semantic HTML5
+- [x] Tentang/keunggulan
+- [x] CTA dan form kontak
+- [x] Footer dan link cepat
+- [x] Daftar blog AI minimal 4 artikel
+- [x] Bootstrap 5
+- [x] Bootstrap Icons
+- [x] Detail blog AI
+- [x] Cover artikel
+- [x] Metadata artikel
+- [x] Komentar sederhana
+- [x] CV dengan Tailwind CSS 4
+- [x] Pendidikan
+- [x] Pengalaman/organisasi minimal 2 item
+- [x] Technical skills
+- [x] Minimal 2 proyek
 - [x] Responsive desktop dan mobile
-- [x] Blog list menggunakan Bootstrap 5
-- [x] Bootstrap Icons digunakan
-- [x] Minimal 4 artikel AI
-- [x] Judul artikel terhubung ke `blog-detail.html`
-- [x] Detail blog menggunakan Bootstrap 5
-- [x] Detail blog memiliki minimal 3 paragraf
-- [x] Detail blog memiliki metadata dan ikon
-- [x] Form komentar sederhana
-- [x] CV menggunakan Tailwind CSS 4
-- [x] CV responsive
-- [x] Semua halaman memiliki navigasi
-- [x] Identitas MimiMind AI konsisten
-- [x] Tema konten landing page dan blog tetap berkaitan dengan AI
-- [x] Kode diberi komentar pada bagian penting
-
-## 👩‍💻 Data CV
-
-CV berisi profil mahasiswa Informatika dengan fokus dan pengalaman pada:
-
-- HTML
-- CSS
-- Web Design
-- UI Design
-- Video Editing
-- Content Creation
-- Bootstrap
-- Tailwind CSS
-- Organisasi: Departemen Agama dan Sosial, Badan Eksekutif Mahasiswa
-
-## 📝 Catatan Pengembangan
-
-Form kontak dan komentar pada proyek ini merupakan tampilan frontend untuk memenuhi kebutuhan studi kasus. Form belum terhubung ke database atau backend.
-
-Folder `assets/img/` disediakan apabila nantinya ingin menambahkan foto profil atau aset ilustrasi lokal.
+- [x] Semua halaman saling terhubung melalui navigasi
+- [x] Identitas visual MimiMind AI konsisten
