@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artikel MimiMind AI tentang Generative AI.">
+    <title>Mengenal Generative AI | MimiMind AI</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root { --mimi-pink:#ec6fa6; --mimi-soft:#fff1f7; --mimi-purple:#a979d7; --mimi-text:#554b5d; }
+        body { font-family:"Poppins",sans-serif; color:var(--mimi-text); background:#fffdf9; }
+        h1,h2,h3,.navbar-brand { font-family:"Baloo 2",sans-serif; color:#44384c; }
+        .navbar-brand { color:var(--mimi-pink)!important; font-size:1.6rem; font-weight:800; }
+        .navbar-brand strong { color:var(--mimi-purple); }
+        .hero-detail { background:linear-gradient(135deg,#fff0f7,#f7efff); }
+        .article-cover { min-height:330px; display:grid; place-items:center; background:linear-gradient(135deg,#ffd7e8,#eee0ff); font-size:9rem; }
+        .badge-mimi { background:var(--mimi-soft); color:#d95791; }
+        .article-content { font-size:1.03rem; line-height:1.9; }
+        .article-content h2 { margin-top:2rem; }
+        .article-content blockquote { margin:2rem 0; padding:1.2rem 1.5rem; border-left:5px solid var(--mimi-pink); background:#fff1f7; border-radius:0 1rem 1rem 0; }
+        .btn-mimi { background:var(--mimi-pink); color:#fff; border:none; }
+        .btn-mimi:hover { background:#d95791; color:#fff; }
+        .related-card { border-color:#f1dce8; border-radius:1.2rem; }
+        footer { background:#fff3f8; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+            <div class="container py-2">
+                <a class="navbar-brand" href="index.html">🐱 MimiMind <strong>AI</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-heart me-1"></i>Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="blog.html"><i class="bi bi-journal-text me-1"></i>Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html"><i class="bi bi-person-badge me-1"></i>CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-detail py-5">
+            <div class="container py-3">
+                <a href="blog.html" class="text-decoration-none small fw-semibold" style="color:#d95791;"><i class="bi bi-arrow-left me-1"></i>Kembali ke Blog</a>
+                <div class="mt-4">
+                    <span class="badge rounded-pill badge-mimi px-3 py-2"><i class="bi bi-stars me-1"></i>Generative AI</span>
+                    <h1 class="display-4 fw-bold mt-3">Mengenal Generative AI dengan Cara Sederhana</h1>
+                    <div class="d-flex flex-wrap gap-3 text-secondary mt-3 small">
+                        <span><i class="bi bi-person me-1"></i>MimiMind Team</span>
+                        <span><i class="bi bi-calendar3 me-1"></i>18 September 2026</span>
+                        <span><i class="bi bi-clock me-1"></i>5 menit baca</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="article-cover rounded-4 shadow-sm mb-5" aria-label="Ilustrasi virtual cat dan AI">🐱✨🤖</div>
+
+                <div class="row g-5">
+                    <article class="col-lg-8 article-content">
+                        <p>
+                            Artificial Intelligence atau AI semakin sering digunakan dalam kehidupan sehari-hari.
+                            Salah satu perkembangan yang banyak dibicarakan adalah <strong>Generative AI</strong>,
+                            yaitu teknologi AI yang dapat menghasilkan konten baru berdasarkan pola yang dipelajari
+                            dari data.
+                        </p>
+
+                        <p>
+                            Contohnya dapat berupa teks, gambar, suara, atau kode program. Ketika seseorang memberikan
+                            instruksi kepada sistem AI, model akan memproses konteks tersebut lalu menghasilkan output
+                            yang sesuai dengan pola dan informasi yang tersedia dalam modelnya.
+                        </p>
+
+                        <blockquote>
+                            <i class="bi bi-quote fs-3 me-2" style="color:#ec6fa6;"></i>
+                            AI sebaiknya dipandang sebagai alat bantu untuk memperluas kemampuan manusia, bukan sebagai pengganti seluruh proses berpikir.
+                        </blockquote>
+
+                        <h2>Bagaimana cara kerjanya?</h2>
+                        <p>
+                            Secara sederhana, model Generative AI dilatih menggunakan data dalam jumlah besar untuk
+                            mempelajari pola. Pada model bahasa, misalnya, sistem belajar hubungan antarkata dan
+                            konteks sehingga dapat memprediksi keluaran yang paling sesuai dengan instruksi pengguna.
+                        </p>
+
+                        <p>
+                            Karena proses tersebut sangat bergantung pada data dan rancangan model, hasil AI tetap perlu
+                            diperiksa. AI dapat memberikan jawaban yang terlihat meyakinkan tetapi ternyata kurang tepat,
+                            sehingga pengguna perlu menggunakan penilaian dan melakukan verifikasi terhadap informasi penting.
+                        </p>
+
+                        <h2>Tips menggunakan Generative AI</h2>
+                        <ul>
+                            <li>Tulis tujuan dengan jelas agar AI memahami hasil yang diharapkan.</li>
+                            <li>Berikan konteks yang cukup, misalnya target pengguna atau format jawaban.</li>
+                            <li>Gunakan instruksi bertahap untuk tugas yang kompleks.</li>
+                            <li>Periksa kembali fakta sebelum menggunakan hasil AI untuk keputusan penting.</li>
+                            <li>Jangan memasukkan data pribadi atau informasi rahasia secara sembarangan.</li>
+                        </ul>
+
+                        <div class="alert alert-warning border-0 rounded-4 mt-4" role="alert">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            <strong>Catatan Mimi:</strong> hasil AI bukan selalu benar. Gunakan AI sebagai alat bantu dan tetap lakukan pengecekan.
+                        </div>
+                    </article>
+
+                    <aside class="col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 mb-4" style="background:#fff1f7;">
+                            <h2 class="h4">🐾 Ringkasan Mimi</h2>
+                            <p class="small mb-0">Generative AI dapat membuat konten baru berdasarkan pola yang dipelajari. Pengguna tetap perlu memberikan instruksi yang jelas dan memeriksa hasilnya.</p>
+                        </div>
+
+                        <div class="card border-0 shadow-sm rounded-4 p-4">
+                            <h2 class="h5">Artikel lainnya</h2>
+                            <a href="blog.html" class="d-block text-decoration-none mt-3" style="color:#554b5d;">💬 Prompt Engineering untuk Pemula</a>
+                            <a href="blog.html" class="d-block text-decoration-none mt-3" style="color:#554b5d;">🛡️ Etika Menggunakan AI</a>
+                            <a href="blog.html" class="d-block text-decoration-none mt-3" style="color:#554b5d;">📊 Mengenal Machine Learning</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" style="background:#fff3f8;">
+            <div class="container">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+                    <h2 class="h3">Tinggalkan komentar 🐱</h2>
+                    <p class="text-secondary">Bagikan pendapat atau pertanyaanmu tentang AI.</p>
+                    <form action="#" method="post">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="comment-name" class="form-label">Nama</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+                                    <input id="comment-name" class="form-control" type="text" placeholder="Nama kamu" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="comment-email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input id="comment-email" class="form-control" type="email" placeholder="nama@email.com" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="comment" class="form-label">Komentar</label>
+                                <textarea id="comment" class="form-control" rows="4" placeholder="Tulis komentar kamu..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-mimi rounded-pill px-4" type="submit"><i class="bi bi-send me-1"></i>Kirim Komentar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 border-top">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 small text-secondary">
+            <span>© 2026 MimiMind AI · Made with 🐱 & AI</span>
+            <div class="d-flex gap-3">
+                <a class="text-decoration-none text-secondary" href="index.html">Home</a>
+                <a class="text-decoration-none text-secondary" href="blog.html">Blog</a>
+                <a class="text-decoration-none text-secondary" href="cv.html">CV</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
