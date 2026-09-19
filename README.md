@@ -32,7 +32,7 @@ Menggunakan:
 - Card
 - Badge
 - Footer
-- Metadata artikel
+- Metadata artikel lengkap: penulis, tanggal, dan waktu baca
 
 Terdapat 4 artikel bertema AI.
 
@@ -62,6 +62,7 @@ Menggunakan:
 
 Isi CV mencakup:
 - Miftahul Jannah Siregar
+- Periode pendidikan: 2024 – Sekarang
 - Mahasiswa S1 Informatika
 - Departemen Agama dan Sosial — Badan Eksekutif Mahasiswa
 - HTML
@@ -83,9 +84,11 @@ mimimind-pabwe-p2/
 ├── blog-detail.html
 ├── cv.html
 ├── README.md
+├── vercel.json
 └── assets/
     ├── css/
-    │   └── style.css
+    │   ├── style.css
+    │   └── bootstrap-custom.css
     └── img/
         ├── ai-generative.png
         ├── prompt-engineering.png
@@ -111,7 +114,7 @@ Navbar/footer menggunakan:
 - `blog-detail.html`
 - `cv.html`
 
-Tidak menggunakan route seperti `/blog`, `/cv`, atau `/`, karena proyek dijalankan sebagai website statis.
+Untuk deployment Vercel, `vercel.json` menyediakan rewrite `/blog`, `/blog-detail`, dan `/cv` ke file HTML terkait. Link internal tetap menggunakan path file relatif agar aman saat dijalankan di Live Server.
 
 ## Cara Menjalankan
 

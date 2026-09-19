@@ -1,0 +1,216 @@
+/* =========================================================
+   MimiMind AI - Bootstrap page customization
+   File ini hanya dipakai oleh blog.html dan blog-detail.html.
+   Tidak menimpa class Bootstrap umum seperti .container atau .btn.
+   ========================================================= */
+
+.mimi-bootstrap-page {
+  --mimi-pink: #8f2458;
+  --mimi-pink-dark: #5f163b;
+  --mimi-pink-soft: #ffe8f2;
+  --mimi-lavender: #eee8ff;
+  --mimi-cream: #fffaf7;
+  --mimi-text: #3f3440;
+  --mimi-muted: #5e5360;
+  --mimi-border: #ead6e1;
+  background: var(--mimi-cream);
+  color: var(--mimi-text);
+}
+
+.mimi-navbar {
+  background: rgba(255, 255, 255, .96);
+  border-bottom: 1px solid var(--mimi-border);
+  box-shadow: 0 6px 24px rgba(91, 54, 77, .05);
+  backdrop-filter: blur(12px);
+}
+
+.mimi-brand {
+  color: var(--mimi-pink-dark) !important;
+  font-weight: 800;
+  letter-spacing: -.02em;
+}
+
+.mimi-brand:hover { color: #46102c !important; }
+
+.mimi-navbar .nav-link {
+  color: #4d4149;
+  font-weight: 700;
+  border-radius: 999px;
+  padding-inline: .9rem !important;
+}
+
+.mimi-navbar .nav-link:hover,
+.mimi-navbar .nav-link:focus-visible,
+.mimi-navbar .nav-link.active {
+  color: var(--mimi-pink-dark);
+  background: var(--mimi-pink-soft);
+}
+
+.mimi-navbar .navbar-toggler {
+  border-color: #e7c9d8;
+}
+
+.mimi-navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 .2rem rgba(143, 36, 88, .15);
+}
+
+.btn-mimi {
+  background: var(--mimi-pink-dark);
+  border-color: var(--mimi-pink-dark);
+  color: #fff;
+  font-weight: 700;
+}
+
+.btn-mimi:hover,
+.btn-mimi:focus-visible {
+  background: #46102c;
+  border-color: #46102c;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.badge-mimi {
+  background: var(--mimi-pink-soft);
+  color: #6b1742;
+  border: 1px solid #e3a9c3;
+}
+
+.blog-hero {
+  background:
+    radial-gradient(circle at 90% 20%, var(--mimi-lavender) 0 12%, transparent 30%),
+    radial-gradient(circle at 8% 10%, #ffe0ee 0 10%, transparent 28%),
+    linear-gradient(180deg, #fff 0%, var(--mimi-cream) 100%);
+  border-bottom: 1px solid var(--mimi-border);
+}
+
+.blog-intro {
+  max-width: 760px;
+}
+
+.mimi-card {
+  border: 1px solid var(--mimi-border);
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 26px rgba(91, 54, 77, .07);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.mimi-card:hover {
+  transform: translateY(-4px);
+  border-color: #d9adc2;
+  box-shadow: 0 18px 42px rgba(91, 54, 77, .12);
+}
+
+.mimi-card .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.mimi-card .card-title-link {
+  color: #2f2630;
+  text-decoration: none;
+}
+
+.mimi-card .card-title-link:hover {
+  color: var(--mimi-pink-dark);
+}
+
+.mimi-muted { color: #514852 !important; }
+
+.mimi-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem 1rem;
+  color: #625761;
+  font-size: .875rem;
+}
+
+.mimi-meta span { display: inline-flex; align-items: center; }
+
+.mimi-footer {
+  background: #3a2634;
+  color: #fff;
+}
+
+.mimi-footer a { color: #ffe1ee !important; }
+.mimi-footer a:hover { color: #fff !important; }
+
+.article-page-header {
+  background:
+    radial-gradient(circle at 88% 15%, var(--mimi-lavender) 0 10%, transparent 28%),
+    linear-gradient(180deg, #fff 0%, var(--mimi-cream) 100%);
+}
+
+.article-cover {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 1px solid var(--mimi-border);
+  box-shadow: 0 18px 45px rgba(91, 54, 77, .09);
+}
+
+.article-content {
+  font-size: 1.06rem;
+  line-height: 1.85;
+}
+
+.article-content h2 {
+  color: #3a2935;
+  margin-top: 2rem;
+  margin-bottom: .8rem;
+}
+
+.article-content li { margin-bottom: .5rem; }
+
+.article-shell,
+.related-panel {
+  position: sticky;
+  top: 6rem;
+  border: 1px solid var(--mimi-border);
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(91, 54, 77, .05);
+}
+
+.mimi-blockquote {
+  border-left: 5px solid var(--mimi-pink-dark);
+  background: #fff0f6;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0 16px 16px 0;
+}
+
+.mimi-alert {
+  background: #f0ebff;
+  border: 1px solid #d1c4f2;
+  color: #3e2f62;
+}
+
+.related-link {
+  color: var(--mimi-pink-dark);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.related-link:hover,
+.related-link:focus-visible {
+  color: #46102c;
+  text-decoration: underline;
+}
+
+.comment-box {
+  border-top: 1px solid var(--mimi-border);
+}
+
+@media (max-width: 575.98px) {
+  .mimi-card { border-radius: 18px; }
+  .article-cover { border-radius: 20px; }
+  .article-shell,
+  .related-panel { border-radius: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mimi-card,
+  .btn-mimi { transition: none; }
+}
