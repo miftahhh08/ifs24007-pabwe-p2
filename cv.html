@@ -1,52 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CV digital Miftahul Jannah Siregar, mahasiswa Informatika dengan minat pada web design, CSS, HTML, video editing, dan content creation.">
-  <meta name="theme-color" content="#8f2458">
-  <title>CV | Miftahul Jannah Siregar · MimiMind AI</title>
-  <!-- Tailwind CSS 4 Play CDN sesuai requirement praktikum. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curriculum Vitae Miftahul Jannah Siregar, mahasiswa Informatika dengan minat pada web design, UI design, video editing, dan content creation.">
+  <title>CV — Miftahul Jannah Siregar | MimiMind AI</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
     @theme {
-      --color-mimi-50:#fff8fb; --color-mimi-100:#ffeaf4; --color-mimi-200:#ffd0e3;
-      --color-mimi-500:#a83268; --color-mimi-600:#8f2458; --color-mimi-purple:#68438f;
-      --color-mimi-ink:#3f3444;
+      --color-mimi-50: #fff8fb;
+      --color-mimi-100: #ffe8f2;
+      --color-mimi-200: #f8c8dc;
+      --color-mimi-700: #8f2458;
+      --color-mimi-900: #4f1230;
+      --color-mimi-ink: #3f3440;
     }
   </style>
 </head>
-<body class="bg-[#fffdf9] text-slate-700 antialiased">
-<a class="fixed -left-[9999px] top-2 z-[100] rounded-lg bg-white px-4 py-2 font-bold text-mimi-600 focus:left-2" href="#cv-main">Lewati ke konten utama</a>
-<header class="sticky top-0 z-50 border-b border-pink-100 bg-white/95 backdrop-blur">
-  <nav class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between lg:px-6" aria-label="Navigasi utama">
-    <a href="index.html" class="text-2xl font-extrabold text-mimi-600 transition hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4">🐱 MimiMind <span class="text-mimi-purple">AI</span></a>
-    <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold"><a href="index.html" class="transition hover:text-mimi-600 focus-visible:outline-2">Home</a><a href="blog.html" class="transition hover:text-mimi-600 focus-visible:outline-2">Blog</a><a href="cv.html" aria-current="page" class="font-bold text-mimi-600 focus-visible:outline-2">CV</a></div>
-  </nav>
-</header>
-<main id="cv-main">
-  <!-- Profile header: identitas, role, dan kontak. -->
-  <section class="bg-gradient-to-br from-mimi-50 via-white to-purple-50"><div class="mx-auto max-w-6xl px-4 py-10 lg:px-6 lg:py-14"><div class="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
-    <div class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><div class="flex flex-col gap-6 sm:flex-row sm:items-center"><img src="assets/img/mimi-avatar.png" alt="Avatar kucing virtual MimiMind AI" width="180" height="180" class="h-32 w-32 shrink-0 rounded-[2rem] object-cover shadow-sm"><div><span class="inline-flex rounded-full bg-mimi-100 px-3 py-1 text-xs font-bold tracking-wide text-mimi-600">INFORMATICS STUDENT</span><h1 class="mt-2 text-4xl font-extrabold tracking-tight text-mimi-ink sm:text-5xl">Miftahul Jannah Siregar</h1><p class="mt-2 text-lg font-bold text-mimi-600">Aspiring Web Developer · Designer · Content Creator</p><p class="mt-3 max-w-2xl text-sm leading-6 text-slate-600">Mahasiswa Informatika yang tertarik pada pengembangan web, desain digital, editing video, dan pembuatan konten kreatif.</p></div></div></div>
-    <!-- Kontak: data yang diminta pada studi kasus CV. -->
-    <div class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><p class="text-xs font-bold tracking-[.18em] text-mimi-600">01 / CONTACT</p><h2 class="mt-1 text-2xl font-extrabold text-mimi-ink">Mari terhubung 🐾</h2><div class="mt-5 space-y-3 text-sm"><p>✉️ <a class="font-semibold underline decoration-pink-200 underline-offset-4 hover:text-mimi-600" href="mailto:miftahuljannah@example.com">miftahuljannah@example.com</a></p><p>📱 <a class="font-semibold underline decoration-pink-200 underline-offset-4 hover:text-mimi-600" href="tel:+6280000000000">+62 8xx-xxxx-xxxx</a></p><p>💬 <a class="font-semibold underline decoration-pink-200 underline-offset-4 hover:text-mimi-600" href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a></p><p>📍 Indonesia</p><p>💻 <a class="font-semibold underline decoration-pink-200 underline-offset-4 hover:text-mimi-600" href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub / username</a></p><p>💼 <a class="font-semibold underline decoration-pink-200 underline-offset-4 hover:text-mimi-600" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p></div></div>
-  </div></div></section>
-  <section class="mx-auto max-w-6xl px-4 py-8 lg:px-6 lg:py-10"><div class="grid gap-6 lg:grid-cols-[1.55fr_0.85fr]"><div class="space-y-6">
-    <!-- About: ringkasan pendidikan dan minat. -->
-    <section class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><p class="text-xs font-bold tracking-[.18em] text-mimi-600">02 / ABOUT</p><h2 class="mt-1 text-3xl font-extrabold text-mimi-ink">Tentang Saya</h2><p class="mt-3 leading-7 text-slate-600">Saya adalah mahasiswa Informatika yang senang menggabungkan teknologi dengan kreativitas. Saya memiliki minat pada web design, HTML, CSS, desain visual, video editing, dan content creation. Saya juga terus mengembangkan kemampuan agar dapat membuat pengalaman digital yang sederhana, menarik, dan mudah digunakan.</p></section>
-    <!-- Education: institusi dan program studi. -->
-    <section class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><p class="text-xs font-bold tracking-[.18em] text-mimi-600">03 / EDUCATION</p><h2 class="mt-1 text-3xl font-extrabold text-mimi-ink">Pendidikan</h2><div class="mt-5 border-l-2 border-mimi-200 pl-5"><p class="text-sm font-bold text-mimi-600">Sedang ditempuh</p><h3 class="mt-1 text-xl font-bold text-mimi-ink">S1 Informatika</h3><p class="font-semibold text-slate-700">Institut Teknologi Del</p><p class="mt-1 text-sm text-slate-600">Fokus pada pengembangan kemampuan teknologi informasi, pemrograman, dan pengembangan solusi digital.</p></div></section>
-    <!-- Experience: organisasi BEM sesuai data pengguna. -->
-    <section class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><p class="text-xs font-bold tracking-[.18em] text-mimi-600">04 / EXPERIENCE</p><h2 class="mt-1 text-3xl font-extrabold text-mimi-ink">Organisasi</h2><div class="mt-5 grid gap-4 md:grid-cols-2"><article class="rounded-2xl bg-mimi-50 p-5"><p class="text-sm font-bold text-mimi-600">Badan Eksekutif Mahasiswa</p><h3 class="mt-1 text-xl font-bold text-mimi-ink">Departemen Agama dan Sosial</h3><p class="mt-2 text-sm leading-6 text-slate-600">Berpartisipasi dalam kegiatan organisasi, kegiatan sosial, serta program yang mendukung kebersamaan dan kontribusi mahasiswa.</p></article><article class="rounded-2xl border border-pink-100 p-5"><p class="text-sm font-bold text-mimi-600">Personal Project</p><h3 class="mt-1 text-xl font-bold text-mimi-ink">MimiMind AI</h3><p class="mt-2 text-sm leading-6 text-slate-600">Merancang konsep website jasa AI dengan pendekatan visual cute, responsive, dan user-friendly.</p></article></div></section>
-    <!-- Projects: dua proyek singkat dan link ke halaman proyek. -->
-    <section class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><p class="text-xs font-bold tracking-[.18em] text-mimi-600">05 / PROJECTS</p><h2 class="mt-1 text-3xl font-extrabold text-mimi-ink">Portfolio</h2><div class="mt-5 grid gap-4 md:grid-cols-2"><a href="index.html" class="group rounded-2xl border border-pink-100 p-5 transition hover:-translate-y-1 hover:shadow-md focus-visible:outline-2"><span class="text-2xl">🐱</span><h3 class="mt-2 text-xl font-bold text-mimi-ink group-hover:text-mimi-600">MimiMind AI</h3><p class="mt-1 text-sm text-slate-600">Landing page jasa AI dengan konsep virtual cat.</p></a><a href="blog.html" class="group rounded-2xl border border-pink-100 p-5 transition hover:-translate-y-1 hover:shadow-md focus-visible:outline-2"><span class="text-2xl">📝</span><h3 class="mt-2 text-xl font-bold text-mimi-ink group-hover:text-mimi-600">MimiMind AI Blog</h3><p class="mt-1 text-sm text-slate-600">Kumpulan artikel edukatif mengenai teknologi AI.</p></a></div></section>
-  </div><aside class="space-y-6">
-    <!-- Skills: utility classes Tailwind sebagai chip. -->
-    <section class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><p class="text-xs font-bold tracking-[.18em] text-mimi-600">06 / SKILLS</p><h2 class="mt-1 text-2xl font-extrabold text-mimi-ink">Keahlian</h2><div class="mt-4 flex flex-wrap gap-2"><span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-bold text-mimi-600">HTML</span><span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-bold text-mimi-600">CSS</span><span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-bold text-mimi-600">Web Design</span><span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-bold text-mimi-600">UI Design</span><span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-bold text-mimi-600">Video Editing</span><span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-bold text-mimi-600">Content Creator</span><span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-bold text-mimi-600">Bootstrap</span><span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-bold text-mimi-600">Tailwind CSS</span></div></section>
-    <!-- Tools and interests melengkapi profil tanpa mengganti requirement. -->
-    <section class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><p class="text-xs font-bold tracking-[.18em] text-mimi-600">07 / INTERESTS</p><h2 class="mt-1 text-2xl font-extrabold text-mimi-ink">Minat</h2><ul class="mt-4 space-y-3 text-sm text-slate-600"><li>🎨 UI/UX &amp; visual design</li><li>💻 Web development</li><li>🎬 Video editing</li><li>📱 Content creation</li><li>🤖 Artificial Intelligence</li></ul></section>
-    <!-- Achievement: pencapaian yang relevan dengan profil mahasiswa. -->
-    <section class="rounded-[2rem] border border-pink-100 bg-white p-6 shadow-sm sm:p-8"><p class="text-xs font-bold tracking-[.18em] text-mimi-600">08 / ACHIEVEMENT</p><h2 class="mt-1 text-2xl font-extrabold text-mimi-ink">Pengalaman &amp; Pencapaian</h2><ul class="mt-4 space-y-3 text-sm text-slate-600"><li>🏆 Berpartisipasi dalam kompetisi bidang IT dan web design.</li><li>🎤 Memiliki pengalaman menjadi MC dalam kegiatan sekolah dan organisasi.</li><li>📱 Mengembangkan pengalaman sebagai content creator.</li></ul></section>
-  </aside></div></section>
-</main>
-<footer class="border-t border-pink-100 bg-[#fff3f8] py-5"><div class="mx-auto flex max-w-6xl flex-col justify-between gap-3 px-4 text-sm font-semibold sm:flex-row lg:px-6"><span>© 2026 MimiMind AI · Made with 🐱 &amp; AI</span><nav aria-label="Navigasi footer" class="flex gap-4"><a class="text-slate-800 hover:text-mimi-600" href="index.html">Home</a><a class="text-slate-800 hover:text-mimi-600" href="blog.html">Blog</a><a class="text-slate-800 hover:text-mimi-600" href="cv.html">CV</a></nav></div></footer>
-</body></html>
+<body class="min-h-screen bg-[#fffaf7] text-mimi-ink antialiased">
+  <a href="#main-content" class="fixed left-4 top-[-5rem] z-50 rounded-full bg-mimi-900 px-4 py-3 font-bold text-white focus:top-4 focus:outline-none focus:ring-4 focus:ring-purple-300">Lewati ke konten</a>
+
+  <!-- Header profil -->
+  <header class="border-b border-pink-100 bg-white">
+    <div class="mx-auto max-w-6xl px-5 py-8">
+      <nav class="mb-8 flex flex-wrap items-center justify-between gap-4" aria-label="Navigasi CV">
+        <a href="index.html" class="text-xl font-extrabold text-mimi-900 no-underline">🐱 MimiMind AI</a>
+        <div class="flex flex-wrap gap-2">
+          <a href="index.html" class="rounded-full px-4 py-2 font-semibold hover:bg-mimi-100">Beranda</a>
+          <a href="blog.html" class="rounded-full px-4 py-2 font-semibold hover:bg-mimi-100">Blog</a>
+          <a href="cv.html" class="rounded-full bg-mimi-100 px-4 py-2 font-semibold text-mimi-900" aria-current="page">CV</a>
+        </div>
+      </nav>
+
+      <div class="grid items-center gap-8 md:grid-cols-[180px_1fr]">
+        <img src="assets/img/mimi-avatar.png" alt="Avatar kucing virtual Mimi" width="600" height="600" class="mx-auto h-44 w-44 rounded-full border-4 border-pink-200 object-cover shadow-lg">
+        <div>
+          <p class="inline-flex rounded-full bg-mimi-100 px-3 py-1 text-xs font-bold tracking-wide text-mimi-900">MAHASISWA INFORMATIKA</p>
+          <h1 class="mt-3 text-4xl font-black tracking-tight text-mimi-900 sm:text-5xl">Miftahul Jannah Siregar</h1>
+          <p class="mt-2 text-lg font-semibold text-mimi-900">Aspiring Web Developer · Designer · Content Creator</p>
+          <p class="mt-3 max-w-3xl text-slate-700">Mahasiswa Informatika yang tertarik pada pengembangan web, desain, editing video, dan pembuatan konten. Senang belajar teknologi baru dan mengubah ide menjadi karya digital yang sederhana serta menarik.</p>
+
+          <!-- Kontak sesuai studi kasus -->
+          <div class="mt-5 flex flex-wrap gap-2 text-sm">
+            <a href="mailto:email@example.com" class="rounded-full border border-pink-200 bg-white px-3 py-2 font-semibold hover:bg-mimi-100">✉️ email@example.com</a>
+            <a href="tel:+6281200000000" class="rounded-full border border-pink-200 bg-white px-3 py-2 font-semibold hover:bg-mimi-100">📱 +62 812-0000-0000</a>
+            <span class="rounded-full border border-pink-200 bg-white px-3 py-2 font-semibold">📍 Indonesia</span>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="rounded-full border border-pink-200 bg-white px-3 py-2 font-semibold hover:bg-mimi-100">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="rounded-full border border-pink-200 bg-white px-3 py-2 font-semibold hover:bg-mimi-100">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="mx-auto max-w-6xl px-5 py-10">
+    <div class="grid gap-8 lg:grid-cols-[1.65fr_1fr]">
+      <div class="space-y-8">
+        <!-- About -->
+        <section class="rounded-3xl border border-pink-100 bg-white p-6 shadow-sm" aria-labelledby="about">
+          <p class="text-xs font-bold tracking-[.18em] text-mimi-900">01 / ABOUT</p>
+          <h2 id="about" class="mt-2 text-2xl font-black text-slate-900">Tentang Saya</h2>
+          <p class="mt-3 leading-7 text-slate-700">Saya adalah mahasiswa S1 Informatika yang menikmati proses belajar teknologi dan desain. Fokus saya saat ini adalah memperkuat kemampuan HTML dan CSS, web design, UI design, editing video, serta content creation.</p>
+        </section>
+
+        <!-- Pendidikan -->
+        <section class="rounded-3xl border border-pink-100 bg-white p-6 shadow-sm" aria-labelledby="education">
+          <p class="text-xs font-bold tracking-[.18em] text-mimi-900">02 / EDUCATION</p>
+          <h2 id="education" class="mt-2 text-2xl font-black text-slate-900">Pendidikan</h2>
+          <div class="mt-5 border-l-2 border-pink-200 pl-5">
+            <h3 class="text-lg font-bold text-slate-900">Institut Teknologi Del</h3>
+            <p class="font-semibold text-mimi-900">S1 Informatika</p>
+            <p class="text-sm text-slate-600">Mahasiswa aktif</p>
+            <p class="mt-2 text-slate-700">Mempelajari dasar pemrograman, pengembangan perangkat lunak, web, UI/UX, dan teknologi informasi.</p>
+          </div>
+        </section>
+
+        <!-- Organisasi -->
+        <section class="rounded-3xl border border-pink-100 bg-white p-6 shadow-sm" aria-labelledby="experience">
+          <p class="text-xs font-bold tracking-[.18em] text-mimi-900">03 / EXPERIENCE</p>
+          <h2 id="experience" class="mt-2 text-2xl font-black text-slate-900">Organisasi &amp; Pengalaman</h2>
+          <article class="mt-5 rounded-2xl bg-[#fff7fb] p-5">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg font-bold text-slate-900">Departemen Agama dan Sosial</h3>
+              <span class="text-sm font-semibold text-mimi-900">Badan Eksekutif Mahasiswa</span>
+            </div>
+            <p class="mt-2 text-slate-700">Berpartisipasi dalam kegiatan organisasi dan program yang berkaitan dengan kegiatan sosial serta pengembangan lingkungan kampus.</p>
+          </article>
+          <article class="mt-4 rounded-2xl bg-[#fff7fb] p-5">
+            <h3 class="text-lg font-bold text-slate-900">Project &amp; Creative Work</h3>
+            <p class="mt-2 text-slate-700">Mengerjakan berbagai tugas dan proyek digital yang menggabungkan web development, desain, editing video, dan pembuatan konten.</p>
+          </article>
+        </section>
+
+        <!-- Projects -->
+        <section class="rounded-3xl border border-pink-100 bg-white p-6 shadow-sm" aria-labelledby="projects">
+          <p class="text-xs font-bold tracking-[.18em] text-mimi-900">04 / PROJECTS</p>
+          <h2 id="projects" class="mt-2 text-2xl font-black text-slate-900">Proyek</h2>
+          <div class="mt-5 grid gap-4 md:grid-cols-2">
+            <a href="index.html" class="group rounded-2xl border border-pink-100 p-5 no-underline transition hover:-translate-y-1 hover:shadow-md">
+              <span class="text-2xl">🐱</span>
+              <h3 class="mt-3 text-lg font-bold text-slate-900">MimiMind AI</h3>
+              <p class="mt-1 text-sm text-slate-700">Website perusahaan jasa AI dengan konsep virtual cat dan desain pastel.</p>
+              <span class="mt-3 inline-block font-bold text-mimi-900">Lihat landing page →</span>
+            </a>
+            <a href="blog.html" class="group rounded-2xl border border-pink-100 p-5 no-underline transition hover:-translate-y-1 hover:shadow-md">
+              <span class="text-2xl">📚</span>
+              <h3 class="mt-3 text-lg font-bold text-slate-900">MimiMind AI Blog</h3>
+              <p class="mt-1 text-sm text-slate-700">Kumpulan artikel pembelajaran tentang Generative AI, prompt engineering, etika AI, dan ML.</p>
+              <span class="mt-3 inline-block font-bold text-mimi-900">Lihat blog →</span>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <aside class="space-y-8">
+        <!-- Skills -->
+        <section class="rounded-3xl border border-pink-100 bg-white p-6 shadow-sm" aria-labelledby="skills">
+          <p class="text-xs font-bold tracking-[.18em] text-mimi-900">05 / SKILLS</p>
+          <h2 id="skills" class="mt-2 text-2xl font-black text-slate-900">Keahlian</h2>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">HTML</span>
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">CSS</span>
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">Web Design</span>
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">UI Design</span>
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">Video Editing</span>
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">Content Creator</span>
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">Bootstrap</span>
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">Tailwind CSS</span>
+            <span class="rounded-full bg-mimi-100 px-3 py-1.5 text-sm font-semibold text-mimi-900">Git</span>
+          </div>
+        </section>
+
+        <!-- Sertifikat / penghargaan -->
+        <section class="rounded-3xl border border-pink-100 bg-white p-6 shadow-sm" aria-labelledby="achievement">
+          <p class="text-xs font-bold tracking-[.18em] text-mimi-900">06 / ACHIEVEMENT</p>
+          <h2 id="achievement" class="mt-2 text-2xl font-black text-slate-900">Sertifikat &amp; Penghargaan</h2>
+          <ul class="mt-4 space-y-3 text-slate-700">
+            <li class="flex gap-2"><span aria-hidden="true">✦</span><span>Partisipasi kompetisi dan proyek teknologi kampus.</span></li>
+            <li class="flex gap-2"><span aria-hidden="true">✦</span><span>Pengalaman organisasi dan kegiatan sosial mahasiswa.</span></li>
+          </ul>
+        </section>
+
+        <!-- Interests -->
+        <section class="rounded-3xl border border-pink-100 bg-white p-6 shadow-sm" aria-labelledby="interest">
+          <p class="text-xs font-bold tracking-[.18em] text-mimi-900">07 / INTEREST</p>
+          <h2 id="interest" class="mt-2 text-2xl font-black text-slate-900">Minat</h2>
+          <p class="mt-3 leading-7 text-slate-700">Web development, AI, UI/UX, visual design, video editing, content creation, dan eksplorasi teknologi baru.</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-pink-100 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-wrap justify-between gap-3 px-5 py-6 text-sm text-slate-700">
+      <span>© 2026 Miftahul Jannah Siregar · MimiMind AI</span>
+      <span>Built with Tailwind CSS 4 🐱</span>
+    </div>
+  </footer>
+</body>
+</html>
